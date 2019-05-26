@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Button } from "react-native"
 
-class ViewSchedule extends Component {
+class Button extends Component {
 
     capitalize = (s) => {
         if (typeof s !== 'string') return ''
@@ -21,7 +21,7 @@ class ViewSchedule extends Component {
     }
 }
 
-export default ViewSchedule;
+export default Button;
 
 const styles = StyleSheet.create({
     scheduleText: {
