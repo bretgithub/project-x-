@@ -41,4 +41,4 @@ Browser (not recommended, very slow with the emulator):
   3. When page loads, scroll down to click the button 'Open project using Expo'
   4. Log in to the app using the credentials below: 
       **user:** Bret  
-      **pw: ** bret
+      **pw:** bret
