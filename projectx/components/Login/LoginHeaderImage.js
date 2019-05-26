@@ -1,6 +1,6 @@
 // required imports and dependencies
 import React, { Component } from "react";
-import { Image, Icon } from 'react-native-elements';
+import { Image } from 'react-native-elements';
 import { StyleSheet, View } from 'react-native'
 
 // create classful component
@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         marginTop: 30,
-        flex: 1,
         resizeMode: 'contain'
     }
 });

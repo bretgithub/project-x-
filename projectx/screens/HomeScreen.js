@@ -1,6 +1,5 @@
 // required imports and dependencies
 import React, { Component } from 'react';
-import { ScrollView } from "react-native";
 import { Container, Content } from 'native-base';
 import LoginForm from "../components/Login/LoginForm"
 import LoginHeaderImage from "../components/Login/LoginHeaderImage"
@@ -17,15 +16,12 @@ class HomeScreen extends Component {
     return (
       // container for components
       <Container>
-
         {/* icon/logo */}
-        <ScrollView>
-          <LoginHeaderImage />
-          {/* login form component */}
-          <Content>
-            <LoginForm />
-          </Content>
-        </ScrollView>
+        <LoginHeaderImage />
+        {/* login form component */}
+        <Content>
+          <LoginForm />
+        </Content>
       </Container>
     );
   }
