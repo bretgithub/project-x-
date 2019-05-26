@@ -7,14 +7,14 @@ import { withNavigation, NavigationActions } from 'react-navigation';
 import UserSetup from '../userAuthListener';
 
 // create classful component
-class EditDeviceForm extends Component {
+class ViewDeviceForm extends Component {
 
     state = {
         name: this.props.navigation.state.params.name,
         deviceId: this.props.navigation.state.params.deviceId,
         UID: this.props.navigation.state.params.UID,
         data: this.props.navigation.state.params.data,
-        page: "editDevice",
+        page: "ViewDevice",
         scheduleData: []
     }
 
@@ -52,16 +52,23 @@ class EditDeviceForm extends Component {
         return (
             <ScrollView>
                 <Container>
-                    <Form style={styles.editDeviceContainer}>
-                        <Item style={styles.editDeviceField} stackedLabel last>
-                            <Label>Device ID</Label>
-                            <Input editable={false} value={this.state.deviceId} />
-                        </Item>
-                        <Item style={styles.editDeviceField} stackedLabel last>
-                            <Label>Device Name</Label>
-                            <Input editable={false} value={this.state.name} />
-                        </Item>
-                    </Form>
+                    <View style={{ flexDirection: "row" }}>
+                        <Text style={styles.viewDeviceText}>
+                            Device ID:
+                        </Text>
+                        <Text style={styles.viewDeviceInfo}>
+                            {this.state.deviceId}
+                        </Text>
+                    </View>
+                    <View style={{ flexDirection: "row" }}>
+                        <Text style={styles.viewDeviceText}>
+                            Device Name:
+                        </Text>
+                        <Text style={styles.viewDeviceInfo}>
+                            {this.state.name}
+                        </Text>
+                    </View>
+
                     <View>
                         <Button title="Edit Device" style={styles.setScheduleButton} onPress={this.goToSetSchedule} />
                     </View>
@@ -84,24 +91,30 @@ class EditDeviceForm extends Component {
                         </View>
                     </ScrollView>
                 </Container>
-            </ScrollView>
+            </ScrollView >
 
         );
     }
 }
 
 // export component withNavigation method which will pass props
-export default withNavigation(EditDeviceForm);
+export default withNavigation(ViewDeviceForm);
 
 const styles = StyleSheet.create({
-    editDeviceContainer: {
+
+    viewDeviceText: {
+        textAlign: "left",
+        fontSize: 18,
         marginTop: 20,
+        marginLeft: 20,
+        fontWeight: "bold"
     },
 
-    editDeviceField: {
-        marginRight: 20,
-        marginLeft: 20,
-        marginTop: 20
+    viewDeviceInfo: {
+        textAlign: "left",
+        fontSize: 18,
+        marginTop: 20,
+        marginLeft: 5
     },
 
     setScheduleButton: {
