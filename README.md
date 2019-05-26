@@ -21,8 +21,7 @@ The project is still being iterated on to add more features and functionalit for
 * Reset password
 * Enhanced data reporting
 
-**Project Repositories:**
-* [Plantr App React Native code](https://github.com/nkanderson86/Plant-r)
+**Additional Project Code Repositories:**
 * [API code](https://github.com/eblouin876/project-x-api)
 * [Raspberry Pi and Arduino code](https://github.com/eblouin876/project-x-pi)
 
