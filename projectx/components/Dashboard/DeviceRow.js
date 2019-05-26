@@ -51,10 +51,10 @@ class DeviceRow extends Component {
         // console.log('disconnect')
     }
 
-    goToEditDevice(index) {
+    goToViewDevice(index) {
         // console.log(index);
         const navigationAction = NavigationActions.navigate({
-            routeName: "EditDevice",
+            routeName: "ViewDevice",
             params: { name: this.state.tableData[index][0], UID: this.state.UID, deviceId: this.state.tableData[index][1], data: this.props.navigation.state.params.data }
         });
         this.props.navigation.dispatch(navigationAction);
@@ -76,7 +76,7 @@ class DeviceRow extends Component {
                                     rowData.map((cellData, cellIndex) => {
                                         console.log("CELL DATA", cellData)
                                         return (
-                                            <Cell key={cellIndex} data={cellIndex === 3 ? <CheckBox center iconType='material' uncheckedIcon='add' checked={this.state.checked} onPress={() => this.goToEditDevice(index)} /> : (cellIndex === 2 && cellData === 0) ? <Text style={{ color: "green" }} >Good </Text> : (cellIndex === 2 && cellData === 1) ? <Text style={{ color: "red" }} >Err </Text> : (cellIndex === 2 && cellData === 2) ? <Text>Unassigned </Text> : cellData} textStyle={styles.text} />
+                                            <Cell key={cellIndex} data={cellIndex === 3 ? <CheckBox center iconType='material' uncheckedIcon='add' checked={this.state.checked} onPress={() => this.goToViewDevice(index)} /> : (cellIndex === 2 && cellData === 0) ? <Text style={{ color: "green" }} >Good </Text> : (cellIndex === 2 && cellData === 1) ? <Text style={{ color: "red" }} >Err </Text> : (cellIndex === 2 && cellData === 2) ? <Text>Unassigned </Text> : cellData} textStyle={styles.text} />
                                         )
                                     }
                                     )

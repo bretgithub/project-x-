@@ -3,12 +3,12 @@ import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 import TabBarIcon from '../components/TabBarIcon';
 import DashboardScreen from '../screens/DashboardScreen';
-import EditDeviceScreen from '../screens/EditDeviceScreen';
+import ViewDeviceScreen from '../screens/ViewDeviceScreen';
 import SetScheduleScreen from '../screens/SetScheduleScreen';
 
 const DashboardStack = createStackNavigator({
   Dashboard: DashboardScreen,
-  EditDevice: EditDeviceScreen,
+  ViewDevice: ViewDeviceScreen,
   SetSchedule: SetScheduleScreen,
 
 });
