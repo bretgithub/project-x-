@@ -35,7 +35,7 @@ Phone: (must have expo App downloaded on your phone)
   2. Scan the QR code below with your phone and open in Expo
   
   <p align="left">
-  <img src="https://github.com/bretgithub/works/blob/master/qr.png"  width="100" title="QR code">
+  <img src="https://github.com/bretgithub/works/blob/master/plantrqr.png"  width="100" title="QR code">
   </p>
   
   3. Use the credentials below to log in:
