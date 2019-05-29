@@ -30,7 +30,7 @@ The project is still being iterated on to add more features and functionality fo
 **To Demo the App:**
 Phone: (must have expo App downloaded on your phone) 
   1. Log into Expo with the credentials: 
-      user: nkanderson86
+      user: bretallan
       pw: 1234
   2. Scan the QR code below with your phone and open in Expo
   
@@ -43,7 +43,7 @@ Phone: (must have expo App downloaded on your phone)
       pw: bret
       
 Browser (not recommended, very slow with the emulator): 
-  1. Click the [Expo project link](https://expo.io/@nkanderson86/projectx)
+  1. Click the [Expo project link](https://expo.io/@bretallan/projectx)
   2. Click tap to play and wait for your turn in the queue
   3. When page loads, scroll down to click the button 'Open project using Expo'
   4. Log in to the app using the credentials below: 
