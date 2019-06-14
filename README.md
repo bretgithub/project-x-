@@ -1,5 +1,5 @@
 
-## PlantR App Project - React Native, Node, MongoDB
+## Automatic Watering App for your houshold plants (Plantr) - React Native, Node, MongoDB
 Ever think your green thumb isn't so green? Hate the idea of going away and possibly starving your plants, or if you're like me, you need a reminder to water your plants and even then sometimes forget? Fret no more, we have built an easy to use app to take the guesswork and worry away! 
 
 The project used React Native for the mobile app, Node and MongoDB for the backend and database. For the app and watering system to function the user has a main controller (Raspberry Pi) and a watering devices(Arduino) for each plant to be watered, that syncs with the main controller. 
